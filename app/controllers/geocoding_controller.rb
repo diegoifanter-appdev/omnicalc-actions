@@ -12,7 +12,7 @@ class GeocodingController < ApplicationController
     #   characters removed, is in the string sanitized_street_address.
     # ==========================================================================
 
-    @latitude = "Replace this string with your answer"
+    @latitude = sanitized_street_address
 
     @longitude = "Replace this string with your answer"
 
