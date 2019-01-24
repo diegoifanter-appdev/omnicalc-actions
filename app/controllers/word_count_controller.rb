@@ -15,8 +15,8 @@ class WordCountController < ApplicationController
 
     @character_count_without_spaces = @text.gsub(/\s+/, "").length.to_s
 
-    @occurrences = @text.scan(/#{@special_word}/).count.to_s
-
+    @occurrences = @text.upcase.scan(/#{@special_word.upcase}/).count.to_s
+   
     # ================================================================================
     # Your code goes above.
     # ================================================================================
